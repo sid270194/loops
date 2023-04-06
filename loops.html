@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  // Increment Loop
+  for (let i = 1; i <= 5; i++) {
+    console.log(i);
+  }
+
+  // Decrement
+  for (let i = 5; i >= 1; i--) {
+    console.log(i);
+  }
+
+  const names = ["ajit", "khushi", "arun", "vikas"];
+
+  for (let i = 0; i < names.length; i++) {
+    console.log(names[i]);
+  }
+
+  function printNumber(no) {
+    if (typeof no !== "number" || Number.isNaN(no)) {
+      console.log("please enter avalid number");
+    }
+    if (no <= 1) {
+      console.log("enter a nnumber greater than one");
+    }
+    for (let i = 1; i <= no; i++) {
+      console.log(i);
+    }
+  }
+  printNumber(10);
+  printNumber(20);
+  printNumber();
+  printNumber(null);
+  printNumber(false);
+  printNumber("siddhant");
+
+  // Write a JS code to print Even numbers in given array
+
+  function Evennumber(array) {
+    if (array.length === 0) {
+      console.log("array is empty");
+    }
+
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] % 2 == 0) {
+        console.log(array[i]);
+      }
+    }
+  }
+  var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  Evennumber(arr);
+  Evennumber();
+
+  // print 0 100 200 300 400 500 600 700 800 900 1000
+
+  function Incrementby100(no) {
+    if (typeof no !== "number" || Number.isNaN(no)) {
+      console.log("please enter avalid number");
+    }
+    for (let i = no; i <= 1000; i = i + 100) {
+      console.log(i);
+    }
+  }
+  Incrementby100("sid");
+
+  // print 0 2 4 6 8 10
+
+  function Incrementby2(no) {
+    if (typeof no !== "number" || Number.isNaN(no)) {
+      console.log("please enter avalid number");
+    }
+    for (let i = 0; i <= no; i += 2) {
+      console.log(i);
+    }
+  }
+  Incrementby2(20);
+  Incrementby2("20");
+
+  // 3 6 9 12 15
+  function Incrementby3(no) {
+    if (typeof no !== "number" || Number.isNaN(no)) {
+      console.log("please enter avalid number");
+    }
+    for (let i = 0; i <= no; i += 3) {
+      console.log(i);
+    }
+  }
+  Incrementby3(21);
+  Incrementby3("20");
+  Incrementby3();
+
+  //0 1 2 3 4 0 1 2 3 4 0 1 2 3 4
+
+  function repeatnumber(no) {
+    if (typeof no !== "number" || Number.isNaN(no)) {
+      console.log("enter a valid number");
+    }
+    for (let i = 0; i <= no; i++) {
+      for (let j = 0; j <= no; j++) {
+        console.log(j + " ");
+      }
+    }
+  }
+  repeatnumber("4");
+
+  repeatnumber("sid");
+</script>
