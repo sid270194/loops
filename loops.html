@@ -113,4 +113,19 @@
   repeatnumber("4");
 
   repeatnumber("sid");
+
+  // 1 1 1 2 2 2 3 3 3 4 4 4
+
+  function numberrepeat(no) {
+    if (typeof no !== "number" || Number.isNaN(no)) {
+      console.log("enter a valid number");
+    }
+
+    for (let i = no; i <= 444; i += 111) {
+      console.log(i);
+    }
+  }
+  numberrepeat(111);
+  numberrepeat("111");
+  numberrepeat();
 </script>
